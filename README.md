@@ -5,14 +5,14 @@ Utilizaremos la imagen de Ubuntu (la última). Usa Visual Studio Code y Docker j
 ### 1. Descarga la imagen ubuntu y comprueba que está en tu equipo
 
 En una terminal ejecutamos `docker image pull ubuntu`. Comprobamos que está en el equipo ejecutando `docker image list`.
-```
+```console
 REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
 ubuntu               latest    c6b84b685f35   4 weeks ago    77.8MB
 ```
 ### 2. Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre
 Creamos un contenedor sin nombre con `docker run -it ubuntu bash`. De esta manera el contenedor se crea y automáticamente se accede al terminal del mismo usando bash. Podemos comprobar que está en ejecución utilizando `docker ps` en otra pestaña.
 ```
-CONTAINER ID    IMAGE   COMMAND CREATED STATUS  PORTS   NAMES
+CONTAINER ID    IMAGE   COMMAND CREATED     STATUS  PORTS   NAMES
 c807a7f5c72d    ubuntu  "bash"  59 seconds ago  Up 59 seconds   focused_bhaskara
 ```
 Podemos ver que el nombre que le ha dado es focused_bhaskara.
