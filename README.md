@@ -32,7 +32,7 @@ En ubu2 ejecutamos el comando `exit` y abandonamos su consola. Si hacemos `docke
 Ejecutando `docker ps -a --size` se nos mostrarán todos los contenedores creados, así como la memoria ocupada. En el caso de ubu1 y ubu2, cada uno ocupan 45.3MB en disco y 123MB de memoria virtual.
 ### 8. ¿Cuanta RAM ocupan los contenedores? Crea cuantos contenedores necesites para calcularlo.
 Para ver la RAM que ocupan los contenedores, podemos usar la herramienta `docker stats`. Con los contenedores recién arrancados, se muestra un uso de 872KiB y 888KiB de memoria RAM, respectivamente.
-```
+```console
 CONTAINER ID   NAME      CPU %     MEM USAGE / LIMIT   MEM %     NET I/O       BLOCK I/O   PIDS
 eec24f65000c   ubu2      0.00%     872KiB / 15.39GiB              0.01%     4.54kB / 0B      0B / 0B         1
 2832714c42a0   ubu1      0.00%     888KiB / 15.39GiB             0.01%     4.92kB / 0B      0B / 0B         1
