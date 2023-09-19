@@ -11,7 +11,7 @@ ubuntu               latest    c6b84b685f35   4 weeks ago    77.8MB
 ```
 ### 2. Crea un contenedor sin ponerle nombre. ¿está arrancado? Obtén el nombre
 Creamos un contenedor sin nombre con `docker run -it ubuntu bash`. De esta manera el contenedor se crea y automáticamente se accede al terminal del mismo usando bash. Podemos comprobar que está en ejecución utilizando `docker ps` en otra pestaña.
-```
+```console
 CONTAINER ID    IMAGE   COMMAND CREATED     STATUS  PORTS   NAMES
 c807a7f5c72d    ubuntu  "bash"  59 seconds ago  Up 59 seconds   focused_bhaskara
 ```
